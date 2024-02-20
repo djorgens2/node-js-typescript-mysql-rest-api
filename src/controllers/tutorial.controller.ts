@@ -17,6 +17,7 @@ export default class TutorialController {
 
       res.status(201).send(savedTutorial);
     } catch (err) {
+      console.log(err)
       res.status(500).send({
         message: "Some error occurred while retrieving tutorials."
       });
